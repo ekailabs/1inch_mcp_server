@@ -1,0 +1,30 @@
+{
+  "name": "cross-chain",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "type": "commonjs",
+  "scripts": {
+    "start": "node mcpServer.js",
+    "prestart": "node monitor-service.js start",
+    "status": "node status.js",
+    "monitor": "node monitor-service.js",
+    "monitor:start": "node monitor-service.js start",
+    "monitor:stop": "node monitor-service.js stop",
+    "monitor:status": "node monitor-service.js status"
+  },
+  "private": true,
+  "dependencies": {
+    "@1inch/cross-chain-sdk": "latest",
+    "@modelcontextprotocol/sdk": "latest",
+    "dotenv": "^16.4.5",
+    "ethers": "^6.13.3",
+    "web3": "^4.13.0"
+  },
+  "devDependencies": {
+    "@types/node": "^22.7.4",
+    "ts-node": "^10.9.2",
+    "typescript": "^5.6.2"
+  }
+  
+}
